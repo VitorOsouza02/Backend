@@ -1,12 +1,12 @@
 from django.db import models
 
 class Domicilio(models.Model):
-    # IDENTIFICAÇÃO BÁSICA
+   
     numero_casa = models.CharField(
         "Número da Casa",
         max_length=10,
-        default="",    # valor-padrão para registros antigos
-        blank=True     # permite em branco
+        default="",    #
+        blank=True     
     )
     rua = models.CharField(
         "Rua",

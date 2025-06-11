@@ -1,4 +1,4 @@
-# censo/views_api.py
+
 
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
@@ -13,8 +13,8 @@ class DomicilioViewSet(viewsets.ModelViewSet):
     queryset = Domicilio.objects.all()
     serializer_class = DomicilioSerializer
     permission_classes = [AllowAny]
-    # Se quiser filtragem básica, você pode habilitar:
-    # filterset_fields = ['bairro', 'cidade', 'uf', 'rua']
+    
+    
 
 
 class PessoaViewSet(viewsets.ModelViewSet):
